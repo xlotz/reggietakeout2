@@ -322,7 +322,7 @@ spring:
 
 mybatis-plus:
   configuration:
-  	#映射实体类时，将表名和字段名中的下划线去掉，按照驼峰命名法映射
+    #映射实体类时，将表名和字段名中的下划线去掉，按照驼峰命名法映射
     map-underscore-to-camel-case: true 
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
@@ -338,7 +338,6 @@ mybatis-plus:
 
 ​	curl http://localhost:8080
 
-![image-20230808155915649](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230808155915649.png)
 
 ## 二、服务接口开发
 
@@ -389,9 +388,8 @@ public class Reggietakeout2Application {
 
 #### 1.3 浏览器访问
 
-http://localhost:8080/backend/index.html效果：
-
-![image-20230808161142267](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230808161142267.png)
+http://localhost:8080/backend/index.html
+效果：
 
 
 
@@ -525,7 +523,6 @@ public class EmployeeController {
 
 2.1.3 登录测试
 
-![image-20230808165456782](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230808165456782.png)
 
 2.2 登录接口优化
 
@@ -579,7 +576,6 @@ public class EmployeeController {
 
 接口验证
 
-![image-20230808171607591](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230808171607591.png)
 
 
 
@@ -637,7 +633,7 @@ public class LoginCheckFilter implements Filter {
                 "/employee/login",
                 "/employee/logout",
                 "/backend/**",
-          			"/front/**",
+                "/front/**",
                 "/common/**"
         };
 
@@ -829,13 +825,11 @@ employee.setUpdateUser(empId);
 
 功能验证
 
-![image-20230809141044082](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809141044082.png)
 
 优化错误
 
 测试时会发现对于相同用户名只能添加一次，后台报错，但前台只报出500，不利于排查问题，所以当用户重复操作时需要抛出异常。
 
-![image-20230809142556011](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809142556011.png)
 
 定义全局错误包括SQL异常，自定义业务异常
 
@@ -893,7 +887,6 @@ public class GlobalExceptionHandler {
 
 异常验证
 
-![image-20230809143435317](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809143435317.png)
 
 
 
@@ -932,7 +925,6 @@ public Result<Page> page(int page, int pageSize, String name){
 
 此时刷新页面，会看到员工信息
 
-![image-20230809145541783](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809145541783.png)
 
 2.4.3 修改员工信息
 
@@ -975,11 +967,9 @@ public Result<Employee> getById(@PathVariable Long id){
 
 这里会有一个问题，后端传给前端的id过长时，JS的精度会出现丢失
 
-![image-20230809155137525](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809155137525.png)
 
 实际后端返回的ID
 
-![image-20230809155621627](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809155621627.png)
 
 解决方法
 
@@ -1074,11 +1064,8 @@ public Result<String> update(@RequestBody Employee employee){
 
 启用禁用员工
 
-![image-20230809161015217](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809161015217.png)
-
 修改员工信息
 
-![image-20230809161112142](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809161112142.png)
 
 
 
@@ -1219,9 +1206,6 @@ public class CategoryController {
 
 3.1.3 新增接口验证
 
-![image-20230809163113003](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809163113003.png)
-
-![image-20230809163209170](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809163209170.png)
 
 3.1.4 菜品分类、套餐分类页面展示接口
 
@@ -1252,7 +1236,6 @@ public Result<Page> page(int page, int pageSize, String name){
 
 3.1.5 接口验证
 
-![image-20230809164143452](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809164143452.png)
 
 
 
@@ -1276,7 +1259,6 @@ public Result<String> update(@RequestBody Category category){
 
 3.1.7 接口验证
 
-![image-20230809170702519](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809170702519.png)
 
 
 
@@ -1544,7 +1526,6 @@ controller/CategoryController
 
 3.1.10 删除接口优化验证
 
-![image-20230809174409664](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809174409664.png)
 
 
 
@@ -1762,13 +1743,10 @@ public class CommonController {
 
 菜品分类接口验证
 
-![image-20230809182711276](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809182711276.png)
-
 
 
 菜品图片接口验证
 
-![image-20230809182818177](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809182818177.png)
 
 添加菜品接口
 
@@ -1904,15 +1882,10 @@ controller/WebMvcConfig
 
 日志
 
-![image-20230809191102409](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809191102409.png)
 
 dish 表
 
-![image-20230809191417420](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809191417420.png)
-
 dish_flavor 表
-
-![image-20230809191453232](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809191453232.png)
 
 
 
@@ -1951,8 +1924,6 @@ public Result<Page> page(int page, int pageSize, String name){
 
 
 效果
-
-![image-20230809192645769](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809192645769.png)
 
 
 
@@ -2012,8 +1983,6 @@ public Result<Page> page(int page, int pageSize, String name){
 
 
 优化效果
-
-![image-20230809194356095](/Users/xiaoqiang/Library/Application Support/typora-user-images/image-20230809194356095.png)
 
 
 
