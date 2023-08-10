@@ -120,14 +120,36 @@ public class DishServiceImpl extends ServiceImpl<DishMapper, Dish> implements Di
 
     }
 
+    /**
+     * 根据菜单ID，删除菜单和口味信息
+     * 需要判断当前菜品是否为停售
+     * 涉及 dish, dish_flavor 表，注意添加事务
+     * @param ids
+     */
     @Override
     @Transactional
     public void deleteByIdWithFlavorAndSetmeal(List<Long> ids) {
+        if (ids.size()<=0){
+            throw new CustomException("要删除的菜品id为空");
+        }
         // 构建查询构造器
-        LambdaQueryWrapper<DishDto> dishDtoQueryWrapper = new LambdaQueryWrapper<>();
-        // 判断菜品状态是否为0
-//        dishDtoQueryWrapper.eq(Dish::getStatus,0);
+        LambdaQueryWrapper<Dish> dishQueryWrapper = new LambdaQueryWrapper<>();
+        // 增加查询条件
+        dishQueryWrapper.in(Dish::getId, ids);
+        // 增加查询条件, 状态为1
+        dishQueryWrapper.eq(Dish::getStatus, 1);
+        log.info("统计包含提交的要删除菜品ID以及菜品状态为售卖: {}", this.count(dishQueryWrapper));
+        if (this.count(dishQueryWrapper)>0){
+            throw new CustomException("该菜品还在售卖，不能删除");
+        }
 
+        // 删除菜品信息
+        this.removeBatchByIds(ids);
+
+        // 通过菜品id 获取口味信息, 并删除
+        LambdaQueryWrapper<DishFlavor> flavorQueryWrapper = new LambdaQueryWrapper<>();
+        flavorQueryWrapper.in(DishFlavor::getDishId, ids);
+        dishFlavorService.remove(flavorQueryWrapper);
 
     }
 }

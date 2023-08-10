@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd424380-7917-4c74-9e37-a654710152bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/controller/SetmealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/dto/SetmealDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/entity/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/entity/SetmealDish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/mapper/SetmealDishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/SetmealDishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/SetmealDishServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/service/SetmealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/SetmealService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/Reggietakeout2Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/Reggietakeout2Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CommonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CommonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/controller/DishController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/controller/EmployeeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/dto/DishDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/dto/DishDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Dish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/DishFlavor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/DishFlavor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Setmeal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Setmeal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/filter/LoginCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/DishService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/DishService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/SetmealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/SetmealService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/DishServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/DishServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/SetmealServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/SetmealServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +77,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="GO_FMT" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -52,13 +89,25 @@
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="/usr/local/node/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunManager">
-    <configuration name="Reggietakeout2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="Reggietakeout2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="reggietakeout2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.reggie2.Reggietakeout2Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.reggie2.Reggietakeout2Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,62 +123,142 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691400593724</updated>
-      <workItem from="1691400596126" duration="29168000" />
+      <workItem from="1691400596126" duration="34449000" />
+      <workItem from="1691588871170" duration="525000" />
+      <workItem from="1691589409555" duration="148000" />
+      <workItem from="1691589561976" duration="26000" />
+      <workItem from="1691589628135" duration="18776000" />
     </task>
+    <task id="LOCAL-00001" summary="更新说明文档">
+      <created>1691584309374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691584309374</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新菜品分类管理功能模块">
+      <created>1691632107151</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691632107151</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新说明文档" />
+    <MESSAGE value="更新菜品分类管理功能模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新菜品分类管理功能模块" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="643" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1691581982423">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1691589554022">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="643" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581982423" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691589554022" />
+    <state x="643" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1691642431435">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="643" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691642431435" />
     <state x="2297" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691550603800" />
-    <state width="1398" height="281" key="GridCell.Tab.0.bottom" timestamp="1691581600021">
+    <state x="457" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1691589460683">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581600021" />
+    <state x="457" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691589460683" />
+    <state x="569" y="346" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1691588919950">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="569" y="346" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691588919950" />
+    <state x="303" y="52" key="CommitChangelistDialog2" timestamp="1691632106043">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691632106043" />
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1691649831502">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831502" />
     <state width="1878" height="241" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084533" />
-    <state width="1398" height="281" key="GridCell.Tab.0.center" timestamp="1691581600017">
+    <state width="1398" height="281" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993522" />
+    <state width="1398" height="198" key="GridCell.Tab.0.center" timestamp="1691649831499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581600017" />
+    <state width="1398" height="198" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831499" />
     <state width="1878" height="241" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084532" />
-    <state width="1398" height="281" key="GridCell.Tab.0.left" timestamp="1691581599994">
+    <state width="1398" height="281" key="GridCell.Tab.0.center/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993519" />
+    <state width="1398" height="198" key="GridCell.Tab.0.left" timestamp="1691649831499">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581599994" />
+    <state width="1398" height="198" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831499" />
     <state width="1878" height="241" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084531" />
-    <state width="1398" height="281" key="GridCell.Tab.0.right" timestamp="1691581600019">
+    <state width="1398" height="281" key="GridCell.Tab.0.left/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993518" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right" timestamp="1691649831501">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581600019" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831501" />
     <state width="1878" height="241" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084532" />
-    <state width="1398" height="281" key="GridCell.Tab.1.bottom" timestamp="1691581600028">
+    <state width="1398" height="281" key="GridCell.Tab.0.right/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993520" />
+    <state width="1398" height="198" key="GridCell.Tab.1.bottom" timestamp="1691649831508">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581600028" />
+    <state width="1398" height="198" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831508" />
     <state width="1878" height="241" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084538" />
-    <state width="1398" height="281" key="GridCell.Tab.1.center" timestamp="1691581600022">
+    <state width="1398" height="281" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993531" />
+    <state width="1398" height="198" key="GridCell.Tab.1.center" timestamp="1691649831504">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581600022" />
+    <state width="1398" height="198" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831504" />
     <state width="1878" height="241" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084534" />
-    <state width="1398" height="281" key="GridCell.Tab.1.left" timestamp="1691581600022">
+    <state width="1398" height="281" key="GridCell.Tab.1.center/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993529" />
+    <state width="1398" height="198" key="GridCell.Tab.1.left" timestamp="1691649831503">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581600022" />
+    <state width="1398" height="198" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831503" />
     <state width="1878" height="241" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084533" />
-    <state width="1398" height="281" key="GridCell.Tab.1.right" timestamp="1691581600023">
+    <state width="1398" height="281" key="GridCell.Tab.1.left/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993522" />
+    <state width="1398" height="198" key="GridCell.Tab.1.right" timestamp="1691649831505">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="281" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691581600023" />
+    <state width="1398" height="198" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831505" />
     <state width="1878" height="241" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084537" />
+    <state width="1398" height="281" key="GridCell.Tab.1.right/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993530" />
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom" timestamp="1691588743271">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691588743271" />
+    <state width="1398" height="303" key="GridCell.Tab.2.center" timestamp="1691588743270">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691588743270" />
+    <state width="1398" height="303" key="GridCell.Tab.2.left" timestamp="1691588743269">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691588743269" />
+    <state width="1398" height="303" key="GridCell.Tab.2.right" timestamp="1691588743270">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.2.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691588743270" />
+    <state x="208" y="31" key="SettingsEditor" timestamp="1691589500532">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="31" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691589500532" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1691632119083">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691632119083" />
     <state x="2164" y="127" width="639" height="729" key="find.popup" timestamp="1691487130956">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="2164" y="127" width="639" height="729" key="find.popup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691487130956" />
+    <state x="419" y="248" key="git4idea.merge.GitPullDialog" timestamp="1691632047616">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="419" y="248" key="git4idea.merge.GitPullDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691632047616" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1691645575513">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691645575513" />
   </component>
 </project>

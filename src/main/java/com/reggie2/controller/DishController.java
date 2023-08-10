@@ -135,19 +135,36 @@ public class DishController {
 
     /**
      * 通过ID删除菜品和菜品口味信息
-     * 需要判断菜品是否停售，菜品是否和套餐分类关联
-     * 需要同时删除3张表，dish, dish_flavor, setmeal_dish
+     * 需要判断菜品是否停售
+     * 需要同时删除3张表，dish, dish_flavor
      * @param ids
      * @return
      */
     @DeleteMapping
     public Result<String> delete(@RequestParam List<Long> ids){
-        log.info("ids: {}", ids);
-        // 判断菜品是否停售
-        // 判断菜品是否关联口味
-        // 判断菜品是否关联套餐
+        log.info("要删除的菜品id: {}", ids);
         dishService.deleteByIdWithFlavorAndSetmeal(ids);
+        return Result.success("删除菜品成功");
+    }
 
-        return null;
+    /**
+     * 通过条件查询菜品信息
+     * 该接口用于后期的套餐管理以及接口
+     * @param dish
+     * @return
+     */
+    @GetMapping("/list")
+    public Result<List<Dish>> list(Dish dish){
+
+        // 构建查询条件
+        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(dish.getCategoryId() != null, Dish::getCategoryId, dish.getCategoryId());
+        // 增加过滤条件，菜品status 为1
+        queryWrapper.eq(Dish::getStatus, 1);
+        // 排序
+        queryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
+        // 查询
+        List<Dish> list = dishService.list(queryWrapper);
+        return Result.success(list);
     }
 }
