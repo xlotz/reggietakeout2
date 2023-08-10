@@ -5,6 +5,22 @@ spring:
     url: jdbc:mysql://localhost:3306/reggie_takeout?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8
     username: root
     password: 12345678
+    druid:
+      #初始化连接大小、最大、最小
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      #连接等待超时
+      max-wait: 60000
+      #空闲检查间隔
+      time-between-eviction-runs-millis: 60000
+      #最小生存时间
+      min-evictable-idle-time-millis: 300000
+
+#      #打开PSCache ，指定每个大小
+#      pool-prepared-statements: true
+#      max-pool-prepared-statement-per-connection-size: 20
+
 
 mybatis-plus:
   configuration:
@@ -15,4 +31,16 @@ mybatis-plus:
       id-type: assign_id
 
 basePath:
-  uploadPath: /Users/xiaoqiang/project/data/upload/
+  uploadPath: /Users/admin/project/data/upload/
+
+logging:
+  config: /Users/admin/project/javaproject/reggietakeout2/src/main/resources/locbak.xml
+  level:
+    root: info
+    com.reggie2.controller: error
+    com.reggie2.service: info
+    com.reggie2.mapper: debug
+  logback:
+    rollingpolicy:
+      max-file-size: 100MB
+      max-history: 7

@@ -43,7 +43,7 @@ public class LoginCheckFilter implements Filter {
         boolean check = check(urls, requestURI);
         // 如果不需要处理，则放行
         if (check){
-            log.info("本次请求不需要处理, 路径:{}", requestURI);
+//            log.info("本次请求不需要处理, 路径:{}", requestURI);
             filterChain.doFilter(request, response);
             return;
         }
@@ -56,7 +56,7 @@ public class LoginCheckFilter implements Filter {
             return;
         }
         // 如果未登录，则返回到登录页面
-        response.getWriter().write(JSON.toJSONString(Result.error("NOTLOGIN")));
+        response.getWriter().write(JSON.toJSONString(Result.error("NotLogin")));
     }
 
     /**

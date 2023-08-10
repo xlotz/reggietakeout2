@@ -2,42 +2,186 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd424380-7917-4c74-9e37-a654710152bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/controller/SetmealController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/dto/SetmealDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/entity/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/entity/SetmealDish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/mapper/SetmealDishMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/SetmealDishService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/SetmealDishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_2_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/locbak.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_2_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/reggietakeout2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/reggietakeout2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/controller/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/service/SetmealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/SetmealService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/DishServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/service/impl/SetmealServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/Reggietakeout2Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/Reggietakeout2Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/common/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CommonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CommonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/DishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/controller/DishController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/controller/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/dto/DishDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/dto/DishDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Dish.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/DishFlavor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/DishFlavor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Setmeal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Setmeal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/filter/LoginCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/DishService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/DishService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/SetmealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/SetmealService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/DishServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/DishServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/SetmealServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/SetmealServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reggie2/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/reggie2/Reggietakeout2ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/reggie2/Reggietakeout2ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/api/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/api/combo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/api/food.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/api/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/api/member.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/api/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/404-images/404-cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/404-images/404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/icons/btn_back@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/icons/btn_clean@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/icons/btn_close@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/icons/icon_index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/icons/icon_upload@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/icons/jine_m-2@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/icons/renshu@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/icons/xiangmujine@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/img_brand01@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/img_denglu_bj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/login/login-l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/login/login-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/login/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/images/noImg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/js/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/js/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/category/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/combo/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/combo/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/demo/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/food/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/food/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/member/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/member/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/page/order/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/plugins/axios/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/plugins/element-ui/fonts/element-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/plugins/element-ui/fonts/element-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/plugins/element-ui/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/plugins/element-ui/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/plugins/vue/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/fonts/element-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/fonts/element-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/icon/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/icon/demo_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/icon/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/icon/iconfont.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/icon/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/icon/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/icon/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/backend/styles/page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/Reggietakeout2Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/common/BaseContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/common/CustomException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/common/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/common/JacksonObjectMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/common/MyMetaObjectHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/common/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/config/MybatisPlusConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/CommonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/DishController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/controller/SetmealController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/dto/DishDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/dto/SetmealDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Dish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/DishFlavor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/Setmeal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/entity/SetmealDish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/filter/LoginCheckFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/mapper/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/mapper/DishFlavorMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/mapper/DishMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/mapper/EmployeeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/mapper/OrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/mapper/SetmealDishMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/mapper/SetmealMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/DishFlavorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/DishService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/SetmealDishService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/SetmealService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/CategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/DishFlavorServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/DishServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/EmployeeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/SetmealDishServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/reggie2/service/impl/SetmealServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/api/address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/api/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/api/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/api/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/cartData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/fonts/DIN-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/fonts/DIN-Medium.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/fonts/PingFangSC-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/fonts/PingFangSC-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/fonts/PingFangSC-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/cart_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/checked_false.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/checked_true.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/demo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/demo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/demo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/demo4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/favico.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/headPage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/locations.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/mainBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/money.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/noImg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/no_order.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/no_wifi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/orders.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/subtract.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/time.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/images/women.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/js/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/js/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/js/vant.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/add-order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/address-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/address.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/no-wify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/pay-success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/page/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/add-order.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/address-edit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/address.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/no-wify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/order.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/pay-success.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/front/styles/vant.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/reggie2/Reggietakeout2ApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +228,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -127,7 +272,9 @@
       <workItem from="1691588871170" duration="525000" />
       <workItem from="1691589409555" duration="148000" />
       <workItem from="1691589561976" duration="26000" />
-      <workItem from="1691589628135" duration="18776000" />
+      <workItem from="1691589628135" duration="22858000" />
+      <workItem from="1691657829662" duration="221000" />
+      <workItem from="1691658056072" duration="1475000" />
     </task>
     <task id="LOCAL-00001" summary="更新说明文档">
       <created>1691584309374</created>
@@ -143,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691632107151</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新套餐管理、订单明细等功能">
+      <created>1691653710199</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691653710199</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +306,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新说明文档" />
     <MESSAGE value="更新菜品分类管理功能模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新菜品分类管理功能模块" />
+    <MESSAGE value="更新套餐管理、订单明细等功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新套餐管理、订单明细等功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1691589554022">
@@ -172,56 +327,56 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="569" y="346" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691588919950" />
-    <state x="303" y="52" key="CommitChangelistDialog2" timestamp="1691632106043">
+    <state x="303" y="52" key="CommitChangelistDialog2" timestamp="1691653709775">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691632106043" />
-    <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1691649831502">
+    <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691653709775" />
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1691659514591">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831502" />
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691659514591" />
     <state width="1878" height="241" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084533" />
     <state width="1398" height="281" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993522" />
-    <state width="1398" height="198" key="GridCell.Tab.0.center" timestamp="1691649831499">
+    <state width="1398" height="198" key="GridCell.Tab.0.center" timestamp="1691659514589">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831499" />
+    <state width="1398" height="198" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691659514589" />
     <state width="1878" height="241" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084532" />
     <state width="1398" height="281" key="GridCell.Tab.0.center/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993519" />
-    <state width="1398" height="198" key="GridCell.Tab.0.left" timestamp="1691649831499">
+    <state width="1398" height="198" key="GridCell.Tab.0.left" timestamp="1691659514588">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831499" />
+    <state width="1398" height="198" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691659514588" />
     <state width="1878" height="241" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084531" />
     <state width="1398" height="281" key="GridCell.Tab.0.left/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993518" />
-    <state width="1398" height="198" key="GridCell.Tab.0.right" timestamp="1691649831501">
+    <state width="1398" height="198" key="GridCell.Tab.0.right" timestamp="1691659514590">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831501" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691659514590" />
     <state width="1878" height="241" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084532" />
     <state width="1398" height="281" key="GridCell.Tab.0.right/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993520" />
-    <state width="1398" height="198" key="GridCell.Tab.1.bottom" timestamp="1691649831508">
+    <state width="1398" height="198" key="GridCell.Tab.1.bottom" timestamp="1691657821730">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831508" />
+    <state width="1398" height="198" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691657821730" />
     <state width="1878" height="241" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084538" />
     <state width="1398" height="281" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993531" />
-    <state width="1398" height="198" key="GridCell.Tab.1.center" timestamp="1691649831504">
+    <state width="1398" height="198" key="GridCell.Tab.1.center" timestamp="1691657821729">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831504" />
+    <state width="1398" height="198" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691657821729" />
     <state width="1878" height="241" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084534" />
     <state width="1398" height="281" key="GridCell.Tab.1.center/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993529" />
-    <state width="1398" height="198" key="GridCell.Tab.1.left" timestamp="1691649831503">
+    <state width="1398" height="198" key="GridCell.Tab.1.left" timestamp="1691657821729">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831503" />
+    <state width="1398" height="198" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691657821729" />
     <state width="1878" height="241" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084533" />
     <state width="1398" height="281" key="GridCell.Tab.1.left/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993522" />
-    <state width="1398" height="198" key="GridCell.Tab.1.right" timestamp="1691649831505">
+    <state width="1398" height="198" key="GridCell.Tab.1.right" timestamp="1691657821730">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="198" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691649831505" />
+    <state width="1398" height="198" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691657821730" />
     <state width="1878" height="241" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1691566084537" />
     <state width="1398" height="281" key="GridCell.Tab.1.right/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691583993530" />
     <state width="1398" height="303" key="GridCell.Tab.2.bottom" timestamp="1691588743271">
@@ -248,6 +403,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691632119083" />
+    <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1691653958746">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="503" y="235" key="chooseDestDirectoryDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691653958746" />
     <state x="2164" y="127" width="639" height="729" key="find.popup" timestamp="1691487130956">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
