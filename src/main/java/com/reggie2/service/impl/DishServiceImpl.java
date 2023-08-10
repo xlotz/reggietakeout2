@@ -1,6 +1,8 @@
 package com.reggie2.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.reggie2.common.CustomException;
 import com.reggie2.dto.DishDto;
 import com.reggie2.entity.Dish;
 import com.reggie2.entity.DishFlavor;
@@ -8,6 +10,7 @@ import com.reggie2.mapper.DishMapper;
 import com.reggie2.service.DishFlavorService;
 import com.reggie2.service.DishService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -57,7 +60,74 @@ public class DishServiceImpl extends ServiceImpl<DishMapper, Dish> implements Di
      */
     @Override
     public DishDto getByIdWithFlavor(Long id) {
+        // 获取菜品信息
+        log.info("dish id:{}", id);
+        Dish dish = this.getById(id);
+        log.info("dish:{}", dish);
+        // 定义一个新的对象，用于构建包含口味信息的对象
+        DishDto dishDto = new DishDto();
+        BeanUtils.copyProperties(dish, dishDto);
+        //通过菜品ID 获取菜品分类信息
 
-        return null;
+        LambdaQueryWrapper<DishFlavor> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(DishFlavor::getDishId, dishDto.getId());
+        List<DishFlavor> list = dishFlavorService.list(queryWrapper);
+        dishDto.setFlavors(list);
+        log.info("dish service impl dishdto: {}", dishDto);
+        return dishDto;
+    }
+
+    /**
+     * 更加菜品ID，更新菜品信息和口味信息，这里更新两张表，注意增加事务
+     * @param dishDto
+     */
+    @Override
+    @Transactional
+    public void updateWithFlavor(DishDto dishDto) {
+        // 更新菜品信息
+        this.updateById(dishDto);
+        // 查询口味信息并删除
+        LambdaQueryWrapper<DishFlavor> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(DishFlavor::getDishId, dishDto.getId());
+        dishFlavorService.remove(queryWrapper);
+        // 插入新的口味信息
+        List<DishFlavor> flavors = dishDto.getFlavors();
+        flavors.stream().map((item) -> {
+            item.setDishId(dishDto.getId());
+            return item;
+        }).collect(Collectors.toList());
+        log.info("新的口味信息: {}", flavors);
+        dishFlavorService.saveBatch(flavors);
+    }
+
+    /**
+     * 修改菜品状态
+     * @param ids
+     * @param status 获取的值即为要修改的值
+     */
+    @Override
+    public void updateStatus(List<Long> ids, Integer status) {
+        if (ids.size()<=0){
+            throw new CustomException("要修改的菜品ids为空");
+        }
+        ids.forEach(item->{
+            LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+            queryWrapper.eq(Dish::getId, item);
+            Dish dish = new Dish();
+            dish.setStatus(status);
+            this.update(dish, queryWrapper);
+        });
+
+    }
+
+    @Override
+    @Transactional
+    public void deleteByIdWithFlavorAndSetmeal(List<Long> ids) {
+        // 构建查询构造器
+        LambdaQueryWrapper<DishDto> dishDtoQueryWrapper = new LambdaQueryWrapper<>();
+        // 判断菜品状态是否为0
+//        dishDtoQueryWrapper.eq(Dish::getStatus,0);
+
+
     }
 }

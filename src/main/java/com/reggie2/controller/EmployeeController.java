@@ -100,7 +100,7 @@ public class EmployeeController {
         // 分页构造器
         Page pageInfo = new Page(page, pageSize);
         // 查询构造器
-        LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper<>();
+        LambdaQueryWrapper<Employee> queryWrapper = new LambdaQueryWrapper();
         queryWrapper.like(StringUtils.isNotEmpty(name), Employee::getName, name);
         queryWrapper.orderByDesc(Employee::getUpdateTime);
         // 执行查询

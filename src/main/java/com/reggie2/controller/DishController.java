@@ -64,35 +64,90 @@ public class DishController {
         queryWrapper.orderByDesc(Dish::getUpdateTime);
         // 执行分页查询
         dishService.page(dishPageInfo, queryWrapper);
-
         // 重新构造返回字段
-        BeanUtils.copyProperties(dishPageInfo, dishDtoPage, "records");
 
+        BeanUtils.copyProperties(dishPageInfo, dishDtoPage, "records");
         List<Dish> records = dishPageInfo.getRecords();
-        List<DishDto> list = records.stream().map((item -> {
+
+
+
+        List<DishDto> list = records.stream().map((item) -> {
             DishDto dishDto = new DishDto();
             BeanUtils.copyProperties(item, dishDto);
             // 获取分类ID
             Long categoryId = item.getCategoryId();
             // 根据分类ID，获取分类名称
             Category category = categoryService.getById(categoryId);
+
             if (category != null) {
                 String categoryName = category.getName();
                 dishDto.setCategoryName(categoryName);
             }
+
             return dishDto;
-        })).collect(Collectors.toList());
+        }).collect(Collectors.toList());
 
         dishDtoPage.setRecords(list);
 
-        log.info("重构字段: {}", dishDtoPage);
+        log.info("重构字段: {}", dishDtoPage.toString());
 
         return Result.success(dishDtoPage);
     }
 
+    /**
+     * 通过菜品ID 获取菜品信息和口味信息
+     * @param id
+     * @return
+     */
     @GetMapping("/{id}")
     public Result<DishDto> getById(@PathVariable Long id){
+        log.info("dish ID: {}", id);
         DishDto dishDto = dishService.getByIdWithFlavor(id);
+        log.info("dishDto: ", dishDto);
         return Result.success(dishDto);
+    }
+
+    /**
+     * 修改菜品信息和口味信息
+     * @param dishDto
+     * @return
+     */
+    @PutMapping
+    public Result<String> update(@RequestBody DishDto dishDto){
+        log.info("获取更新的菜品信息: {}", dishDto);
+        dishService.updateWithFlavor(dishDto);
+        return Result.success("更新菜品及口味信息");
+    }
+
+    /**
+     * 修改菜品状态
+     * @param ids
+     * @param status 获取的值即为要修改的值
+     * @return
+     */
+    @PostMapping("/status/{status}")
+    public Result<String> updateStatus(@RequestParam List<Long> ids, @PathVariable Integer status){
+
+        dishService.updateStatus(ids, status);
+        return Result.success("修改菜品状态成功");
+
+    }
+
+    /**
+     * 通过ID删除菜品和菜品口味信息
+     * 需要判断菜品是否停售，菜品是否和套餐分类关联
+     * 需要同时删除3张表，dish, dish_flavor, setmeal_dish
+     * @param ids
+     * @return
+     */
+    @DeleteMapping
+    public Result<String> delete(@RequestParam List<Long> ids){
+        log.info("ids: {}", ids);
+        // 判断菜品是否停售
+        // 判断菜品是否关联口味
+        // 判断菜品是否关联套餐
+        dishService.deleteByIdWithFlavorAndSetmeal(ids);
+
+        return null;
     }
 }

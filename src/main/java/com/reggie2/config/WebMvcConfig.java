@@ -17,7 +17,6 @@ import java.util.List;
  */
 @Configuration
 @Slf4j
-@EnableTransactionManagement
 public class WebMvcConfig extends WebMvcConfigurationSupport {
     /**
      * 设置静态资源映射

@@ -80,6 +80,11 @@ public class CategoryController {
         return Result.success("删除分类信息成功");
     }
 
+    /**
+     * 获取菜品分类
+     * @param category
+     * @return
+     */
     @GetMapping("/list")
     public Result<List<Category>> list(Category category){
         // 条件构造器
