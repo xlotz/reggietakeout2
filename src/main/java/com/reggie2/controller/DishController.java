@@ -12,9 +12,11 @@ import com.reggie2.service.DishService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -32,6 +34,8 @@ public class DishController {
     private DishFlavorService dishFlavorService;
     @Autowired
     private CategoryService categoryService;
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     /**
      * 添加菜品和口味信息，注意这里重定义保存方法，操作两张表 dish, dish_flavor 表，需要添加事务
@@ -42,6 +46,9 @@ public class DishController {
     public Result<String> save(@RequestBody DishDto dishDto){
         log.info("DishDto : {}", dishDto);
         dishService.saveWithFlavor(dishDto);
+        // 清理菜品缓存
+        String key = "dish_" + dishDto.getCategoryId() + "_1";
+        redisTemplate.delete(key);
         return Result.success("添加菜品和口味信息成功");
     }
 
@@ -116,6 +123,9 @@ public class DishController {
     public Result<String> update(@RequestBody DishDto dishDto){
         log.info("获取更新的菜品信息: {}", dishDto);
         dishService.updateWithFlavor(dishDto);
+        // 清理菜品缓存
+        String key = "dish_" + dishDto.getCategoryId() + "_1";
+        redisTemplate.delete(key);
         return Result.success("更新菜品及口味信息");
     }
 
@@ -150,11 +160,21 @@ public class DishController {
     /**
      * 通过条件查询菜品信息
      * 该接口用于后期的套餐管理以及接口
+     * 优化： 增加redis
      * @param dish
      * @return
      */
     @GetMapping("/list")
     public Result<List<Dish>> list(Dish dish){
+        List<Dish> list = null;
+        // 构造key
+        String key = "dish_" + dish.getCategoryId() + "_" + dish.getStatus();
+        // 从redis 获取数据
+        list = (List<Dish>) redisTemplate.opsForValue().get(key);
+        if (list != null){
+            log.info("从redis获取数据, key: {}", key);
+            return Result.success(list);
+        }
 
         // 构建查询条件
         LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
@@ -164,7 +184,10 @@ public class DishController {
         // 排序
         queryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
         // 查询
-        List<Dish> list = dishService.list(queryWrapper);
+        list = dishService.list(queryWrapper);
+        // 缓存数据
+        log.info("缓存到redis， key: {}", key);
+        redisTemplate.opsForValue().set(key, list, 60, TimeUnit.MINUTES);
         return Result.success(list);
     }
 }

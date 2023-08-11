@@ -40,13 +40,13 @@ basePath:
 
 
 logging:
-  config: /Users/admin/project/javaproject/reggietakeout2/src/main/resources/locbak.xml
-  level:
-    root: info
-    com.reggie2.controller: error
-    com.reggie2.service: info
-    com.reggie2.mapper: debug
-  logback:
-    rollingpolicy:
-      max-file-size: 100MB
-      max-history: 7
+  config: /Users/admin/project/javaproject/reggietakeout2/src/main/resources/logbak.xml
+#  level:
+#    root: info
+#    com.reggie2.controller: error
+#    com.reggie2.service: info
+#    com.reggie2.mapper: debug
+#  logback:
+#    rollingpolicy:
+#      max-file-size: 1MB
+#      max-history: 1
