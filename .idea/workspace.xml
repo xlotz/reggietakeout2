@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd424380-7917-4c74-9e37-a654710152bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reggie2/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/reggietakeout2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/reggietakeout2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/locbak.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/locbak.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,11 @@
   </component>
   <component name="GOROOT" path="$PROJECT_DIR$/../../go/go1.16.10" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -100,7 +108,7 @@
       <workItem from="1691657829662" duration="221000" />
       <workItem from="1691658056072" duration="1755000" />
       <workItem from="1691660632781" duration="682000" />
-      <workItem from="1691715260467" duration="592000" />
+      <workItem from="1691715260467" duration="1989000" />
     </task>
     <task id="LOCAL-00001" summary="更新说明文档">
       <created>1691584309374</created>
@@ -130,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691659575544</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="优化日志、数据库连接等">
+      <created>1691715890583</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691715890583</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,10 +176,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="569" y="346" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691588919950" />
-    <state x="84" y="52" key="CommitChangelistDialog2" timestamp="1691659574647">
+    <state x="84" y="52" key="CommitChangelistDialog2" timestamp="1691715890279">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="84" y="52" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691659574647" />
+    <state x="84" y="52" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691715890279" />
     <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1691662698733">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -233,10 +248,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="31" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691589500532" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1691659584107">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1691716081550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691659584107" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691715914229" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.23.1920.1057@0.0.1440.900" timestamp="1691716081550" />
     <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1691653958746">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
