@@ -1,0 +1,17 @@
+.git
+logs
+target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

@@ -33,8 +33,9 @@ mybatis-plus:
 basePath:
   uploadPath: /Users/admin/project/data/upload/
 
+
 logging:
-  config: /Users/admin/project/javaproject/reggietakeout2/src/main/resources/locbak.xml
+  config: /Users/xiaoqiang/project/javaproject/reggietakeout2/src/main/resources/locbak.xml
   level:
     root: info
     com.reggie2.controller: error
