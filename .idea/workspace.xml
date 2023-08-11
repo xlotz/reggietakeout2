@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd424380-7917-4c74-9e37-a654710152bd" name="Default Changelist" comment="添加redis环境配置">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/reggietakeout2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/reggietakeout2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logbak.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logbak.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +159,8 @@
     <MESSAGE value="更新套餐管理、订单明细等功能" />
     <MESSAGE value="优化日志、数据库连接等" />
     <MESSAGE value="添加redis环境配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加redis环境配置" />
+    <MESSAGE value="knife4j api接口说明文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="knife4j api接口说明文档" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1691589554022">
@@ -250,6 +248,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.2.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691588743270" />
+    <state x="144" y="79" key="MergeDialog" timestamp="1691743229402">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="144" y="79" key="MergeDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691743229402" />
+    <state x="431" y="173" key="MultipleFileMergeDialog" timestamp="1691743229476">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="431" y="173" key="MultipleFileMergeDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1691743229476" />
     <state x="208" y="31" key="SettingsEditor" timestamp="1691589500532">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
