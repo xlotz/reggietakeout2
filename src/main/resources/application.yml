@@ -36,11 +36,11 @@ mybatis-plus:
       id-type: assign_id
 
 basePath:
-  uploadPath: /Users/xiaoqiang/project/data/upload/
+  uploadPath: /Users/admin/project/data/upload/
 
 
 logging:
-  config: /Users/xiaoqiang/project/javaproject/reggietakeout2/src/main/resources/logbak.xml
+  config: /Users/admin/project/javaproject/reggietakeout2/src/main/resources/logbak.xml
 #  level:
 #    root: info
 #    com.reggie2.controller: error
